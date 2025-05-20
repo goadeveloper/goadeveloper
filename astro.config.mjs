@@ -10,7 +10,10 @@ export default defineConfig({
       enabled: true
     }
   }),
+
+  site: import.meta.env.SITE,
+
   vite: {
     plugins: [tailwindcss()]
-  }
+  },
 });
